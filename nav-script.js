@@ -7,7 +7,9 @@ $('#socialButtons').css('align-items', 'center');
 $('#socialButtons').css('justify-content', 'space-around');
 $('#socialButtons').css('box-sizing', 'border-box');
 $('#socialButtons').css('padding', '10px');
-$('#socialButtons').css('border', '3px solid ' + Colors.darkPurple);
+$('#socialButtons').css('border', '3px solid ' + Colors.darkPurple + '1)');
+$('#socialButtons').css('border-radius', '3px');
+$('#socialButtons').css('background-color', Colors.darkBlue + '.3)');
 $('#socialButtons').css('width', '60px');
 $('#socialButtons').hide();
 
