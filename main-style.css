@@ -1,8 +1,35 @@
+body{
+
+}
 #nav-toggle{
 	border-radius: 100px;
 	width: 100px;
-	
+
 }
+
+#nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100px;
+}
+
+#socialButtons{
+	/*display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+	box-sizing: border-box;
+	padding: 10px;
+
+	border: 3px solid rgba(84, 0, 122, 1);
+	width: 60px;*/
+}
+#contextButtons{
+	border: 3px solid rgba(84, 0, 122, 1);
+}
+
 #socialButtons{
 	list-style: none;
 }
@@ -29,5 +56,12 @@
 
 
 
-
+/*colors:*/
+/*rgba(84, 0, 122, 1)*/
+/*rgba(175, 25, 25, 1)*/
+/*rgba(43, 111, 232, 1)*/
+/*rgba(5, 171, 101, 1)*/
+/*rgba(215, 240, 255, 1)*/
+/*rgba(47, 73, 147, 1)*/
+/*rgba(255, 225, 225, 1)*/
 /**/
