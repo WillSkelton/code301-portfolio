@@ -1,5 +1,5 @@
 var isDisplayed = true;
-console.log(typeof(Colors.darkPurple));
+// console.log(typeof(Colors.darkPurple));
 
 $('#socialButtons').css('display', 'flex');
 $('#socialButtons').css('flex-direction', 'column');
