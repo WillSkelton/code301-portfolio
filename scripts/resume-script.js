@@ -12,3 +12,4 @@ function resume() {
 
 }
 $('#resume-button').on('click', resume);
+$('#res').on('click', resume);

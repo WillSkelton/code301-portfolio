@@ -48,23 +48,31 @@ body{
 	z-index: 20;
 }
 #socialButtons{
-	/*display: flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-
+	list-style: none;
 	box-sizing: border-box;
 	padding: 10px;
-
+	background: rgba(47, 73, 147, .3);
 	border: 3px solid rgba(84, 0, 122, 1);
-	width: 60px;*/
+	width: 60px;
+
 }
 #contextButtons{
-	border: 3px solid rgba(84, 0, 122, 1);
-}
-#socialButtons{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
 	list-style: none;
+	box-sizing: border-box;
+	padding: 10px;
+	background: rgba(47, 73, 147, .3);
+	border: 3px solid rgba(84, 0, 122, 1);
+	width: 60px;
 }
+
 .socialLink{
 	font-size: 40px;
 	color: black;
@@ -75,6 +83,18 @@ body{
 	color: rgba(5, 171, 101, 1);
 	text-decoration: none;
 }
+
+.context{
+	font-size: 40px;
+	color: black;
+	text-decoration: none;
+}
+.context:hover{
+	font-size: 40px;
+	color: rgba(5, 171, 101, 1);
+	text-decoration: none;
+}
+
 
 #mainMenu{
 	width: 65%;
