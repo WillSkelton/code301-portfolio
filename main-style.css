@@ -79,7 +79,6 @@ body{
 #mainMenu{
 	width: 65%;
 	height: 90%;
-	border: 3px solid red;
 	box-sizing: border-box;
 	display:flex;
 	flex-direction: column;
@@ -88,7 +87,6 @@ body{
 	justify-content: center;
 	padding: 50px 10px;
 }
-
 .mainMenuItems{
 
 	width: 85%;
@@ -99,8 +97,6 @@ body{
 	padding: 10px;
 	box-sizing: border-box;
 }
-
-
 /* Small screens */
 /*@media only screen and (min-width: 400px) {
   #mainMenu {
@@ -117,6 +113,18 @@ body{
 
 	}
 }*/
+
+
+/*=============== START OF TEMPORARY STYLES ===============*/
+#resume{
+	width: 65%;
+	background-color: white;
+	color: black;
+	border: 2px solid red;
+}
+
+/*=============== END OF TEMPORARY STYLES ===============*/
+
 
 /*Tablets*/
 @media only screen and (min-width: 600) {
