@@ -77,30 +77,74 @@ body{
 }
 
 #mainMenu{
-	width: 85%;
-	height: 100%;
+	width: 65%;
+	height: 90%;
 	border: 3px solid red;
-	display:flex;
-	flex-direction: row;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	flex-wrap: wrap;
+	padding: 10px;
+	box-sizing: border-box;
+
 }
 
 .mainMenuItems{
-	width: 46%;
+	width: 45%;
 	height: 25%;
-	flex-grow: 1;*/
-	flex-shrink: 1;
-	/*flex-basis: 500px;*/
-
 	margin: 10px;
 	border: 3px solid rgba(84, 0, 122, 1);
 	background-color: rgba(5, 171, 101, .6);
 	padding: 10px;
 	box-sizing: border-box;
+}
 
+
+/* Small screens */
+@media only screen and (min-width: 400px) {
+  #mainMenu {
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		padding: 50px 10px;
+  }
+
+	.mainMenuItems{
+		width: 85%;
+
+	}
+}
+
+/*Tablets*/
+@media only screen and (min-width: 1024px) {
+	#mainMenu {
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		flex-wrap: wrap;
+  }
+	.mainMenuItems{
+		width: 45%;
+		height: 25%;
+		margin: 10px;
+	}
+}
+
+/*Desctop*/
+@media only screen and (min-width: 1920px) {
+	#mainMenu {
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		flex-wrap: wrap;
+  }
+	.mainMenuItems{
+		width: 45%;
+		height: 25%;
+		margin: 10px;
+	}
 }
 
 
