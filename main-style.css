@@ -23,10 +23,10 @@ body{
 }
 #enterIcon{
 	border-radius: 350px;
+	box-sizing: border-box;
 }
 #enterIcon:hover{
 	border: 2px solid white;
-	width: 496px;
 }
 #enter{
 	color: white;
@@ -80,14 +80,19 @@ body{
 	width: 65%;
 	height: 90%;
 	border: 3px solid red;
-	padding: 10px;
 	box-sizing: border-box;
-
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	padding: 50px 10px;
 }
 
 .mainMenuItems{
-	width: 45%;
-	height: 25%;
+
+	width: 85%;
+	height: 15%;
 	margin: 10px;
 	border: 3px solid rgba(84, 0, 122, 1);
 	background-color: rgba(5, 171, 101, .6);
@@ -97,7 +102,7 @@ body{
 
 
 /* Small screens */
-@media only screen and (min-width: 400px) {
+/*@media only screen and (min-width: 400px) {
   #mainMenu {
 		display:flex;
 		flex-direction: column;
@@ -111,10 +116,10 @@ body{
 		width: 85%;
 
 	}
-}
+}*/
 
 /*Tablets*/
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 600) {
 	#mainMenu {
 		display:flex;
 		flex-direction: row;
@@ -131,7 +136,7 @@ body{
 }
 
 /*Desctop*/
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 720px) {
 	#mainMenu {
 		display:flex;
 		flex-direction: row;
