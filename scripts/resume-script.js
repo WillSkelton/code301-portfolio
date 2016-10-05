@@ -7,12 +7,12 @@ $('#faq').hide();
 
 function resume() {
 
-	$('#mainMenu').fadeOut(1500);
-	$('#resume').fadeOut(1500);
-	$('#programs').fadeOut(1500);
-	$('#currentProgect').fadeOut(1500);
-	$('#faq').fadeOut(1500);
-  $('#resume').fadeIn(1500);
+	$('#mainMenu').fadeOut(0);
+	$('#resume').fadeOut(0);
+	$('#programs').fadeOut(0);
+	$('#currentProgect').fadeOut(0);
+	$('#faq').fadeOut(0);
+  $('#resume').fadeIn(0);
 
 
 }
