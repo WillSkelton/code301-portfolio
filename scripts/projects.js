@@ -33,4 +33,6 @@ for (var i = 0; i < projectData.length; i++) {
 	$('#programs').append(html);
 }
 
-$('$programTemplate').hide();
+$('#programTemplate').remove();
+
+// $('$programTemplate').hide();
