@@ -48,7 +48,8 @@ body{
 	position: absolute;
 	left: 5%;
 	top: 2%;
-	z-index: 20;
+	/*z-index: 20;*/
+	position: fixed;
 }
 #socialButtons{
 	display: flex;
@@ -130,10 +131,36 @@ body{
 }
 
 #resume{
-	width: 65%;
-	background-color: white;
+	width: 95%;
+	height: 100%;
+	font-size: 1em;
+
+}
+#title{
+	padding: 5px;
+	background-color: rgba(5, 171, 101, .6);
 	color: black;
-	border: 2px solid red;
+	border: 3px solid rgba(84, 0, 122, 1);
+	box-sizing: border-box;
+	margin: 110px 10px 10px 10px;
+}
+#bio{
+	padding: 5px;
+	background-color: rgba(5, 171, 101, .6);
+	color: black;
+	border: 3px solid rgba(84, 0, 122, 1);
+	box-sizing: border-box;
+	margin: 10px;
+}
+#cv{
+	padding: 5px;
+	background-color: rgba(5, 171, 101, .6);
+
+	color: black;
+
+	border: 3px solid rgba(84, 0, 122, 1);
+	box-sizing: border-box;
+	margin: 10px;
 }
 
 #programs{
@@ -163,7 +190,7 @@ body{
 		flex-direction: column;
 		align-items: center;
 		width: 10%;
-		position: absolute;
+		position: fixed;
 		left: 2%;
 		top: 2%;
 		z-index: 20;
@@ -191,6 +218,8 @@ body{
 		color: rgba(5, 171, 101, 1);
 		text-decoration: none;
 	}
+
+	/*MAIN MENU*/
 	#mainMenu {
 		display:flex;
 		flex-direction: row;
@@ -202,7 +231,7 @@ body{
 		width: 75%;
   }
 	.mainMenuItems{
-		border: 3px dashed rgba(84, 0, 122, 1);
+		border: 3px solid rgba(84, 0, 122, 1);
 		width: 45%;
 		height: 20%;
 		margin: 10px;
