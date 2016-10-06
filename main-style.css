@@ -151,7 +151,46 @@ body{
 
 
 /*Tablets*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 550px) {
+	/*NAV*/
+	#nav-toggle{
+		border-radius: 100%;
+		width: 100%;
+		border: 3px solid rgba(84, 0, 122, 1);
+	}
+	#nav{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 10%;
+		position: absolute;
+		left: 2%;
+		top: 2%;
+		z-index: 20;
+	}
+	#socialButtons{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		list-style: none;
+		box-sizing: border-box;
+		padding: 10px;
+		background: rgba(47, 73, 147, .3);
+		border: 3px solid rgba(84, 0, 122, 1);
+		width: 60px;
+
+	}
+	.socialLink{
+		font-size: 40px;
+		color: black;
+		text-decoration: none;
+	}
+	.socialLink:hover{
+		font-size: 40px;
+		color: rgba(5, 171, 101, 1);
+		text-decoration: none;
+	}
 	#mainMenu {
 		display:flex;
 		flex-direction: row;
@@ -163,12 +202,13 @@ body{
 		width: 75%;
   }
 	.mainMenuItems{
-		border: 2px dashed red;
+		border: 3px dashed rgba(84, 0, 122, 1);
 		width: 45%;
 		height: 20%;
 		margin: 10px;
 	}
 }
+
 
 /*Desktop*/
 /*@media only screen and (min-width: 720px) {
