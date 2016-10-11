@@ -1,16 +1,28 @@
-function(ctx) {
+function Project(opts) {
+	this.title = opts.title;
+	this.repoURL = opts.repoURL;
+	this.summary = opts.summary;
+	this.authorURLs = opts.authorURLs;
+	this.rank = opts.rank;
 
-	function Project(opts) {
+}
 
-	}
+Project.allProjects = [];
+
+Project.prototype.toHTML = function () {
 	var source = $("#programTemplate").html();
 	var template = Handlebars.compile(source);
+};
 
-	for (var i = 0; i < projectData.length; i++) {
-		var html = template(projectData[i]);
-		$('#programs').append(html);
-	}
+Project.load = function(projectData) {
+	Project.allProjects = projectData.map(function(element) {
+		return new Project(element);
+	});
+};
 
 
-	$('#programTemplate').remove();
-}(window)
+
+var source = $("#programTemplate").html();
+var template = Handlebars.compile(source);
+$('#programTemplate').remove();
+loadProjects();
