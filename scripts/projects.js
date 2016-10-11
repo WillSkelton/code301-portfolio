@@ -1,11 +1,16 @@
-var source = $("#programTemplate").html();
-var template = Handlebars.compile(source);
+function(ctx) {
 
-for (var i = 0; i < projectData.length; i++) {
-	var html = template(projectData[i]);
-	$('#programs').append(html);
-}
+	function Project(opts) {
 
-projectData.reduce(appendToDOM);
+	}
+	var source = $("#programTemplate").html();
+	var template = Handlebars.compile(source);
 
-$('#programTemplate').remove();
+	for (var i = 0; i < projectData.length; i++) {
+		var html = template(projectData[i]);
+		$('#programs').append(html);
+	}
+
+
+	$('#programTemplate').remove();
+}(window)
