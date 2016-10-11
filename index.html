@@ -6,7 +6,7 @@
 		<title></title>
 		<script src="https://use.fontawesome.com/f61635b642.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-		<script id="programTemplate">
+		<script id="programTemplate" type="text/x-handlebars-template">
 			<section class="programInstance">
 				<h1 class="projectName">{{ title }}</h1>
 
@@ -15,10 +15,9 @@
 				<p class="projectSummary"> {{ summary }}</p>
 
 				<h3 class="projectAuthors"> {{ authorURLs }}</h3>
-			</script>
-		</section>
+			</section>
+		</script>
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<!-- <link rel="stylesheet" href="styles/fonts/fonts.css" media="screen" title="no title"> -->
 		<link rel="stylesheet" href="main-style.css" media="screen" title="no title">
 	</head>
 	<body>
@@ -146,14 +145,15 @@
 
 		</section>
 
+<!-- ========= UPDATES ========= -->
+	<section id="updates">
+
+	</section>
+
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src='scripts/colors.js'></script>
-	<script type="text/javascript" src='scripts/landing-script.js'></script>
-	<script type="text/javascript" src='scripts/nav-script.js'></script>
-	<script type="text/javascript" src='scripts/main-menu-script.js'></script>
-	<script type="text/javascript" src='scripts/resume-script.js'></script>
-	<script type="text/javascript" src='scripts/project-script.js'></script>
+	<script type="text/javascript" src='scripts/event-handler.js'></script>
 	<script type="text/javascript" src='scripts/project-data.js'></script>
 	<script type="text/javascript" src='scripts/projects.js'></script>
 </html>
