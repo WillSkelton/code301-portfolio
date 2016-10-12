@@ -1,4 +1,4 @@
-html{
+/*html{
 	height: 100%;
 }
 body{
@@ -14,10 +14,10 @@ body{
 	font-family: 'Roboto', sans-serif;
 	margin: 0px;
 	height: 100%
-}
+}*/
 
 /*LANDING PAGE*/
-#landingPage{
+/*#landingPage{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -32,10 +32,10 @@ body{
 }
 #enter{
 	color: white;
-}
+}*/
 
 /*NAV*/
-#nav-toggle{
+/*#nav-toggle{
 	border-radius: 100%;
 	width: 100%;
 	border: 3px solid rgba(84, 0, 122, 1);
@@ -48,7 +48,6 @@ body{
 	position: absolute;
 	left: 5%;
 	top: 2%;
-	/*z-index: 20;*/
 	position: fixed;
 }
 #socialButtons{
@@ -73,7 +72,7 @@ body{
 	font-size: 40px;
 	color: rgba(5, 171, 101, 1);
 	text-decoration: none;
-}
+}*/
 
 /*MAIN MENU*/
 #mainMenu{
