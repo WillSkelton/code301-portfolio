@@ -26,7 +26,7 @@
     if (localStorage.projectData) {
       Project.loadAll(JSON.parse(localStorage.projectData));
 			console.log(1);
-			console.log(localStorage.projectData);
+			console.log(localStorage.pro);
 
       // viewFunction();
     } else {
