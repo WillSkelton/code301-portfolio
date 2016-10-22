@@ -6,7 +6,18 @@
 		<title></title>
 		<script src="https://use.fontawesome.com/f61635b642.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-		<script id="programTemplate" type="text/x-handlebars-template">
+		<!-- <script id="programTemplate" type="text/x-handlebars-template">
+			<section class="programInstance">
+				<h1 class="projectName">{{ title }}</h1>
+
+				<h3 class="linkToRepo"> {{{ repoURL }}}</h3>
+
+				<p class="projectSummary"> {{ summary }}</p>
+
+				<h3 class="projectAuthors"> {{ authorURLs }}</h3>
+			</section>
+		</script> -->
+		<script id="template" type="text/x-handlebars-template">
 			<section class="programInstance">
 				<h1 class="projectName">{{ title }}</h1>
 
@@ -17,7 +28,9 @@
 				<h3 class="projectAuthors"> {{ authorURLs }}</h3>
 			</section>
 		</script>
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+		<link  href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="styles/base.css" media="screen" title="no title">
 		<link rel="stylesheet" href="styles/layout.css" media="screen" title="no title">
 		<link rel="stylesheet" href="styles/module.css" media="screen" title="no title">
@@ -54,7 +67,7 @@
 				<li><a class='context' id='up' >Up</a></li>
 				<li><a class='context' id='feed'>fd</a></li>
 				<li>
-					<select class="filter" name="nameFilter">
+					<select id="filterSelect" class="filter" name="nameFilter">
 						<option class='select' value="option">Filter By Name</option>
 					</select>
 				</li>
@@ -178,8 +191,8 @@
 	<script type="text/javascript" src='scripts/colors.js'></script>
 	<script type="text/javascript" src='scripts/event-handler.js'></script>
 	<script type="text/javascript" src='scripts/project-data.js'></script>
-	<script type="text/javascript" src='scripts/projectView.js'></script>
 	<script type="text/javascript" src='scripts/projects.js'></script>
+	<script type="text/javascript" src='scripts/projectView.js'></script>
 
 </html>
 

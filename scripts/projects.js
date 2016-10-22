@@ -40,11 +40,12 @@
   };
 
 
-	var source = $("#programTemplate").html();
+	var source = $("#template").html();
+	// console.log(source);
 	var template = Handlebars.compile(source);
-	$('#programTemplate').remove();
+	// $('#programTemplate').remove();
 
-	ProjectView.loadProjects();
+	// ProjectView.loadProjects();
 	ctx.Project = Project;
 
 })(window)
