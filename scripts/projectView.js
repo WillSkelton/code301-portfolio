@@ -1,7 +1,8 @@
 (function(ctx) {
   var ProjectView = {};
-  var source = $("#programTemplate").html();
-  var template = Handlebars.compile(source);
+  var source = $("#template").html();
+  console.log($("#template").html());
+  var template = Handlebars.compile($("#template").html());
 
   ProjectView.loadProjects = function(){
     for (var i = 0; i < projectData.length; i++) {
@@ -11,10 +12,11 @@
   }
 
   ProjectView.populateFilters = function() {
-    let selector = $('');
+    const selector = $('#filterSelect');
+    console.log(ProjectView);
+    console.log(Project.allProjects);
   }
 
-
-  console.log(ProjectView);
+  ProjectView.populateFilters();
   ctx.ProjectView = ProjectView;
 })(window)
