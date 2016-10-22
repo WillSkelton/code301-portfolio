@@ -34,7 +34,8 @@ EventHandler.showResume = function() {
   $('#resume').show();
 }
 
-EventHandler.projectScript = function() {
+EventHandler.showProjects = function() {
+  // ========= HIDE ALL OTHER PAGES =========
   $('#landingPage').hide();
   $('#mainMenu').hide();
   $('#resume').hide();
@@ -44,6 +45,9 @@ EventHandler.projectScript = function() {
   $('updates').hide();
   $('feedback').hide();
 
+
+
+  // ========= SHOW PROGRAMS PAGE =========
   $('#programs').show();
 }
 
@@ -74,8 +78,8 @@ EventHandler.addListeners = function() {
   $('#res').on('click', EventHandler.showResume);
 
   // PROJECTS
-  $('#programs-button').on('click', EventHandler.projectScript);
-  $('#prog').on('click', EventHandler.projectScript);
+  $('#programs-button').on('click', EventHandler.showProjects);
+  $('#prog').on('click', EventHandler.showProjects);
 }
 
 
