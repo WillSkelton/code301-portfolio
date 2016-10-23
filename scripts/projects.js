@@ -23,25 +23,18 @@
 
 	Project.fetchAll = function() {
     if (localStorage.projectData) {
-			// console.log('Project.fetchAll: if(true)');
       Project.loadAll(JSON.parse(localStorage.projectData));
-			// console.log(localStorage.projectData);
-			console.log(1);
 
     } else {
-			console.log(2);
-			// console.log('Project.fetchAll: if(false)');
-      $.getJSON('data/projects.json', function(projectData) {
-        localStorage.projectData = JSON.stringify(projectData);
-				Project.loadAll(localStorage.projectData);
-      });
+
+      $.getJSON('data/projects.json', function(data) {
+				localStorage.projectData = JSON.stringify(data);
+				console.log(localStorage.projectData);
+				Project.loadAll(JSON.parse(localStorage.projectData));
+			});
     }
   };
 
-
-	// var source = $("#programTemplate").html();
-
-	// var template = Handlebars.compile(source);
 
 	ctx.Project = Project;
 
