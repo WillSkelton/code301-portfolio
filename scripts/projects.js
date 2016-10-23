@@ -4,8 +4,7 @@
 		this.title = opts.title;
 		this.repoURL = opts.repoURL;
 		this.summary = opts.summary;
-		this.authorURLs = opts.authorURLs;
-		this.rank = opts.rank;
+		this.author = opts.author.split(`,`);
 
 	}
 
@@ -24,25 +23,25 @@
 
 	Project.fetchAll = function() {
     if (localStorage.projectData) {
-			console.log('Project.fetchAll: if(true)');
+			// console.log('Project.fetchAll: if(true)');
       Project.loadAll(JSON.parse(localStorage.projectData));
-			console.log(localStorage.projectData);
+			// console.log(localStorage.projectData);
+			console.log(1);
 
-      // viewFunction();
     } else {
-			console.log('Project.fetchAll: if(false)');
+			console.log(2);
+			// console.log('Project.fetchAll: if(false)');
       $.getJSON('data/projects.json', function(projectData) {
-        Project.loadAll(projectData);
         localStorage.projectData = JSON.stringify(projectData);
-        // viewFunction();
+				Project.loadAll(localStorage.projectData);
       });
     }
   };
 
 
-	var source = $("#programTemplate").html();
+	// var source = $("#programTemplate").html();
 
-	var template = Handlebars.compile(source);
+	// var template = Handlebars.compile(source);
 
 	ctx.Project = Project;
 
