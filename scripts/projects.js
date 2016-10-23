@@ -4,8 +4,7 @@
 		this.title = opts.title;
 		this.repoURL = opts.repoURL;
 		this.summary = opts.summary;
-		this.authorURLs = opts.authorURLs;
-		this.rank = opts.rank;
+		this.author = opts.author.split(`,`);
 
 	}
 
@@ -24,25 +23,18 @@
 
 	Project.fetchAll = function() {
     if (localStorage.projectData) {
-			console.log('Project.fetchAll: if(true)');
       Project.loadAll(JSON.parse(localStorage.projectData));
-			console.log(localStorage.projectData);
 
-      // viewFunction();
     } else {
-			console.log('Project.fetchAll: if(false)');
-      $.getJSON('data/projects.json', function(projectData) {
-        Project.loadAll(projectData);
-        localStorage.projectData = JSON.stringify(projectData);
-        // viewFunction();
-      });
+
+      $.getJSON('data/projects.json', function(data) {
+				localStorage.projectData = JSON.stringify(data);
+				console.log(localStorage.projectData);
+				Project.loadAll(JSON.parse(localStorage.projectData));
+			});
     }
   };
 
-
-	var source = $("#programTemplate").html();
-
-	var template = Handlebars.compile(source);
 
 	ctx.Project = Project;
 

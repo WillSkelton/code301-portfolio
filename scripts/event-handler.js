@@ -45,7 +45,8 @@ EventHandler.showProjects = function() {
   $('updates').hide();
   $('feedback').hide();
 
-
+  // ========= CALLS THE RESPECTIVE FUNCTIONS WHEN PAGE IS SELECTED =========
+  ProjectView.doAllTheThings();
 
   // ========= SHOW PROGRAMS PAGE =========
   $('#programs').show();
