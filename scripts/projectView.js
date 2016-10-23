@@ -3,7 +3,6 @@
 
   // ====== INSERTS PORJECT OBJECTS IN THE TEMPLATE ======
   ProjectView.displayProjects = function(){
-    Project.fetchAll();
 
     // GRABS TEMPLATE AND COMPILES IT
     const source = $("#programTemplate").html();
@@ -44,7 +43,8 @@
   }
 
   ProjectView.doAllTheThings = function (){
-    ProjectView.displayProjects();
+    Project.fetchAll();
+    
     ProjectView.populateFilters();
   }
 

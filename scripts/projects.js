@@ -11,8 +11,8 @@
 	Project.allProjects = [];
 
 	Project.prototype.toHTML = function () {
-		var source = $("#programTemplate").html();
-		var template = Handlebars.compile(source);
+		const source = $(`#programTemplate`).html();
+		const template = Handlebars.compile(source);
 	};
 
 	Project.loadAll = function(projectData) {
@@ -24,17 +24,20 @@
 	Project.fetchAll = function() {
     if (localStorage.projectData) {
       Project.loadAll(JSON.parse(localStorage.projectData));
+			ProjectView.displayProjects();
 
     } else {
 
       $.getJSON('data/projects.json', function(data) {
 				localStorage.projectData = JSON.stringify(data);
 				console.log(localStorage.projectData);
+
 				Project.loadAll(JSON.parse(localStorage.projectData));
+				ProjectView.displayProjects();
+
 			});
     }
   };
-
 
 	ctx.Project = Project;
 
