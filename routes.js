@@ -1,0 +1,10 @@
+page(/, );
+page('/mainMenu',);
+page('mainMenu/resume', resume.load());
+page('mainMenu/programs', programs.load());
+page('mainMenu/currentProgect', currentProgect.load());
+page('mainMenu/faq', faq.load());
+page('mainMenu/updates', updates.load());
+page('mainMenu/feedback', feedback.load());
+page('*', error);
+page();
