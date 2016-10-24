@@ -44,7 +44,7 @@
 
   ProjectView.doAllTheThings = function (){
     Project.fetchAll();
-    
+
     ProjectView.populateFilters();
   }
 
