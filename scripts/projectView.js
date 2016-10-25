@@ -42,12 +42,96 @@
     })
   }
 
+  // ====== EVENT HANDLERS ======
+  ProjectView.landingScript = function() {
+    $('#landingPage').hide();
+    $('#mainMenu').hide();
+    $('#resume').hide();
+    $('#programs').hide();
+    $('#currentProgect').hide();
+    $('#faq').hide();
+    $('updates').hide();
+    $('feedback').hide();
+
+  	$('#nav-toggle').show();
+  	$('#mainMenu').show();
+  }
+
+  ProjectView.navScript = function() {
+    $('#socialButtons').slideToggle(400);
+    $('#contextButtons').toggle(400);
+  }
+
+  ProjectView.showResume = function() {
+    $('#landingPage').hide();
+    $('#mainMenu').hide();
+    $('#resume').hide();
+    $('#programs').hide();
+    $('#currentProgect').hide();
+    $('#faq').hide();
+    $('updates').hide();
+    $('feedback').hide();
+
+    $('#resume').show();
+  }
+
+  ProjectView.showProjects = function() {
+    // ========= HIDE ALL OTHER PAGES =========
+    $('#landingPage').hide();
+    $('#mainMenu').hide();
+    $('#resume').hide();
+    $('#programs').hide();
+    $('#currentProgect').hide();
+    $('#faq').hide();
+    $('updates').hide();
+    $('feedback').hide();
+
+    // ========= CALLS THE RESPECTIVE FUNCTIONS WHEN PAGE IS SELECTED =========
+    ProjectView.doAllTheThings();
+
+    // ========= SHOW PROGRAMS PAGE =========
+    $('#programs').show();
+  }
+
+  ProjectView.addListeners = function() {
+    // ON LOAD
+    $('#nav-toggle').hide();
+    $('#mainMenu').hide();
+    $('#resume').hide();
+    $('#programs').hide();
+    $('#currentProgect').hide();
+    $('#faq').hide();
+    $('updates').hide();
+    $('feedback').hide();
+
+
+    // LANDING PAGE
+    $('#landingPage').show();
+    $('#enterIcon').on('click', ProjectView.landingScript);
+    $('#home').on('click', ProjectView.landingScript);
+
+    // NAV
+    $('#socialButtons').hide();
+    $('#contextButtons').hide();
+    $('#nav-toggle').on('click', ProjectView.navScript);
+
+    // RESUME
+    $('#resume-button').on('click', ProjectView.showResume);
+    $('#res').on('click', ProjectView.showResume);
+
+    // PROJECTS
+    $('#programs-button').on('click', ProjectView.showProjects);
+    $('#prog').on('click', ProjectView.showProjects);
+  }
+
   ProjectView.doAllTheThings = function (){
+
     Project.fetchAll();
 
     ProjectView.populateFilters();
   }
 
+  ProjectView.addListeners();
 
   ctx.ProjectView = ProjectView;
 })(window)
