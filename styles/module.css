@@ -1,0 +1,49 @@
+#nav{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	position: absolute;
+	left: 5%;
+	top: 2%;
+	position: fixed;
+}
+#nav-toggle{
+	border-radius: 100%;
+	width: 20%;
+}
+#socialButtons{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	list-style: none;
+	box-sizing: border-box;
+	padding: 10px;
+	width: 200px;
+
+}
+.socialLink{
+	font-size: 40px;
+	text-decoration: none;
+}
+.socialLink:hover{
+	text-decoration: none;
+}
+#contextButtons{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	list-style: none;
+	box-sizing: border-box;
+	padding: 10px;
+	width: 315px;
+}
+.context{
+	font-size: 2.5em;
+	text-decoration: none;
+}
+.context:hover{
+	text-decoration: none;
+}

@@ -1,0 +1,53 @@
+#mainMenu{
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	padding: 50px 10px;
+}
+.mainMenuItems{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 30%;
+	margin: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+#resume{
+	width: 95%;
+	height: 100%;
+	font-size: 1em;
+
+}
+#title{
+	padding: 5px;
+	box-sizing: border-box;
+	margin: 110px 10px 10px 10px;
+}
+#bio{
+	padding: 5px;
+	box-sizing: border-box;
+	margin: 10px;
+}
+#cv{
+	padding: 5px;
+	box-sizing: border-box;
+	margin: 10px;
+}
+#programs{
+	width: 65%;
+}
+.programInstance{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

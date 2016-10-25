@@ -1,0 +1,68 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.mainMenuItems{
+	border: 3px solid rgba(150, 20, 40, 1);
+	background-color: rgba(57, 125, 200, .8);
+}
+#nav-toggle{
+	border: 3px solid rgba(84, 0, 122, 1);
+}
+#socialButtons{
+	background: rgba(47, 73, 147, .3);
+	border: 3px solid rgba(84, 0, 122, 1);
+}
+.socialLink{
+	color: black;
+}
+.socialLink:hover{
+	color: rgba(5, 171, 101, 1);
+}
+#contextButtons{
+	background: rgba(47, 73, 147, .3);
+	border: 3px solid rgba(84, 0, 122, 1);
+}
+.context{
+	font-size: 2.5em;
+	color: black;
+}
+.context:hover{
+	font-size: 40px;
+	color: rgba(5, 171, 101, 1);
+}
+
+#title{
+	background-color: rgba(5, 171, 101, .6);
+	color: black;
+	border: 3px solid rgba(84, 0, 122, 1);
+}
+#bio{
+	background-color: rgba(5, 171, 101, .6);
+	color: black;
+	border: 3px solid rgba(84, 0, 122, 1);
+}
+#cv{
+	background-color: rgba(5, 171, 101, .6);
+	color: black;
+	border: 3px solid rgba(84, 0, 122, 1);
+}
+#programs{
+	color: black;
+	border: 2px solid red;
+}
+.programInstance{
+	border: 3px solid rgba(84, 0, 122, 1);
+	background-color: rgba(5, 171, 101, 1);
+}
+
+
+
+
+/*colors:
+rgba(130, 130, 130, 1)
+rgba(20, 120, 20, 1)
+rgba(57, 125, 200, 1)
+rgba(150, 20, 40, 1)
+rgba(20, 60, 100, 1)
+rgba(5, 171, 101, 1)
+*/
