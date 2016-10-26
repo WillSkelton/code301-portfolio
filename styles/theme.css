@@ -1,68 +1,78 @@
-body{
-	font-family: 'Roboto', sans-serif;
-}
-.mainMenuItems{
-	border: 3px solid rgba(150, 20, 40, 1);
-	background-color: rgba(57, 125, 200, .8);
-}
-#nav-toggle{
-	border: 3px solid rgba(84, 0, 122, 1);
-}
-#socialButtons{
-	background: rgba(47, 73, 147, .3);
-	border: 3px solid rgba(84, 0, 122, 1);
-}
-.socialLink{
-	color: black;
-}
-.socialLink:hover{
-	color: rgba(5, 171, 101, 1);
-}
-#contextButtons{
-	background: rgba(47, 73, 147, .3);
-	border: 3px solid rgba(84, 0, 122, 1);
-}
-.context{
-	font-size: 2.5em;
-	color: black;
-}
-.context:hover{
-	font-size: 40px;
-	color: rgba(5, 171, 101, 1);
+/*Tablets*/
+@media only screen and (min-width: 550px) {
+	/*NAV*/
+	#nav-toggle{
+		border-radius: 100%;
+		width: 100%;
+		border: 3px solid rgba(84, 0, 122, 1);
+	}
+	#nav{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 10%;
+		position: fixed;
+		left: 2%;
+		top: 2%;
+		z-index: 20;
+	}
+	#socialButtons{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		list-style: none;
+		box-sizing: border-box;
+		padding: 10px;
+		background: rgba(47, 73, 147, .3);
+		border: 3px solid rgba(84, 0, 122, 1);
+		width: 60px;
+
+	}
+	.socialLink{
+		font-size: 40px;
+		color: black;
+		text-decoration: none;
+	}
+	.socialLink:hover{
+		font-size: 40px;
+		color: rgba(5, 171, 101, 1);
+		text-decoration: none;
+	}
+
+	/*MAIN MENU*/
+	#mainMenu {
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		width: 75%;
+  }
+	.mainMenuItems{
+		border: 3px solid rgba(84, 0, 122, 1);
+		width: 45%;
+		height: 20%;
+		margin: 10px;
+	}
 }
 
-#title{
-	background-color: rgba(5, 171, 101, .6);
-	color: black;
-	border: 3px solid rgba(84, 0, 122, 1);
-}
-#bio{
-	background-color: rgba(5, 171, 101, .6);
-	color: black;
-	border: 3px solid rgba(84, 0, 122, 1);
-}
-#cv{
-	background-color: rgba(5, 171, 101, .6);
-	color: black;
-	border: 3px solid rgba(84, 0, 122, 1);
-}
-#programs{
-	color: black;
-	border: 2px solid red;
-}
-.programInstance{
-	border: 3px solid rgba(84, 0, 122, 1);
-	background-color: rgba(5, 171, 101, 1);
-}
 
-
-
-
-/*colors:
-rgba(130, 130, 130, 1)
-rgba(20, 120, 20, 1)
-rgba(57, 125, 200, 1)
-rgba(150, 20, 40, 1)
-rgba(20, 60, 100, 1)
-rgba(5, 171, 101, 1)
-*/
+/*Desktop*/
+/*@media only screen and (min-width: 720px) {
+	#mainMenu {
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		flex-wrap: wrap;
+  }
+	.mainMenuItems{
+		width: 45%;
+		height: 25%;
+		margin: 10px;
+	}
+}*/
