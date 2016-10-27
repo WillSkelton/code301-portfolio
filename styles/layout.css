@@ -52,6 +52,7 @@
 
 
 #resume{
+	display: none;
 	width: 95%;
 	height: 100%;
 	font-size: 1em;
@@ -82,13 +83,13 @@
 }
 
 #programs{
+	display: none;
 	width: 65%;
-	/*background-color: white;*/
 	color: black;
-	border: 2px solid red;
 }
 .programInstance{
 	border: 3px solid rgba(84, 0, 122, 1);
 	background-color: rgba(5, 171, 101, .6);
+	margin: 10px;
 }
 /*=============== END OF TEMPORARY STYLES ===============*/

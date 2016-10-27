@@ -1,11 +1,11 @@
 /*NAV*/
 #nav-toggle{
+	display: none;
 	border-radius: 100%;
 	width: 100%;
 	border: 3px solid rgba(84, 0, 122, 1);
 }
 #nav{
-	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 20%;
