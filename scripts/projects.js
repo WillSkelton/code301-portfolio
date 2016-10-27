@@ -32,7 +32,7 @@
 				localStorage.projectData = JSON.stringify(data);
 				console.log(localStorage.projectData);
 
-				Project.loadAll(JSON.parse(localStorage.projectData));
+				Project.loadAll(data);
 				ProjectView.displayProjects();
 
 			});
