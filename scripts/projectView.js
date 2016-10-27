@@ -95,10 +95,9 @@
 
   ProjectView.addListeners = function() {
     // ON LOAD
-    $('#nav-toggle').hide();
     $('#mainMenu').hide();
-    $('#resume').hide();
-    $('#programs').hide();
+    // $('#resume').hide();
+    // $('#programs').hide();
     $('#currentProgect').hide();
     $('#faq').hide();
     $('updates').hide();
