@@ -10,10 +10,10 @@
 
 	Project.allProjects = [];
 
-	Project.prototype.toHTML = function () {
-		const source = $(`#programTemplate`).html();
-		const template = Handlebars.compile(source);
-	};
+	// Project.prototype.toHTML = function () {
+	// 	const source = $(`#programTemplate`).html();
+	// 	const template = Handlebars.compile(source);
+	// };
 
 	Project.loadAll = function(projectData) {
 		Project.allProjects = projectData.map(function(element) {

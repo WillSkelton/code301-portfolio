@@ -4,5 +4,5 @@
   resumeController.init = () => {
     View.showResume();
   }
-
+  ctx.resumeController = resumeController;
 }(window))
