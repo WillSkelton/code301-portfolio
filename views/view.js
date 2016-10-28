@@ -61,6 +61,8 @@
 
     $('#mainMenu').hide();
     $('#programs').hide();
+    $('#filterSelect').hide();
+
     $('#resume').show();
   }
 
