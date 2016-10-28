@@ -5,8 +5,9 @@
   ProjectView.displayProjects = function(){
 
     // GRABS TEMPLATE AND COMPILES IT
-    const source = $("#programTemplate").html();
-    const template = Handlebars.compile(source);
+    // const source = $("#programTemplate").html();
+    // const template = Handlebars.compile(source);
+    Project.toHTML();
 
 
     // EMPTIES PROGRAM LIST
@@ -43,24 +44,12 @@
   }
 
   // ====== EVENT HANDLERS ======
-  ProjectView.landingScript = function() {
-    $('#landingPage').hide();
-    $('#mainMenu').hide();
-    $('#resume').hide();
-    $('#programs').hide();
-    $('#currentProgect').hide();
-    $('#faq').hide();
-    $('updates').hide();
-    $('feedback').hide();
 
-  	$('#nav-toggle').show();
-  	$('#mainMenu').show();
-  }
 
-  ProjectView.navScript = function() {
-    $('#socialButtons').toggle(400);
-    $('#contextButtons').toggle(400);
-  }
+  // ProjectView.navScript = function() {
+  //   $('#socialButtons').toggle(400);
+  //   $('#contextButtons').toggle(400);
+  // }
 
   ProjectView.showResume = function() {
     $('#landingPage').hide();
@@ -93,35 +82,7 @@
     $('#programs').show();
   }
 
-  ProjectView.addListeners = function() {
-    // ON LOAD
-    $('#mainMenu').hide();
-    // $('#resume').hide();
-    // $('#programs').hide();
-    $('#currentProgect').hide();
-    $('#faq').hide();
-    $('updates').hide();
-    $('feedback').hide();
 
-    //
-    // // LANDING PAGE
-    // $('#landingPage').show();
-    // $('#enterIcon').on('click', ProjectView.landingScript);
-    // $('#home').on('click', ProjectView.landingScript);
-
-    // NAV
-    $('#socialButtons').hide();
-    $('#contextButtons').hide();
-    // $('#nav-toggle').on('click', ProjectView.navScript);
-
-    // RESUME
-    // $('#resume-button').on('click', ProjectView.showResume);
-    // $('#res').on('click', ProjectView.showResume);
-
-    // PROJECTS
-    // $('#programs-button').on('click', ProjectView.showProjects);
-    // $('#prog').on('click', ProjectView.showProjects);
-  }
 
   ProjectView.doAllTheThings = function (){
 
@@ -130,7 +91,7 @@
     ProjectView.populateFilters();
   }
 
-  ProjectView.addListeners();
+
 
   ctx.ProjectView = ProjectView;
 })(window)
