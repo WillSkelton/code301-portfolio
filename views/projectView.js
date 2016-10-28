@@ -52,14 +52,15 @@
   // }
 
   ProjectView.showResume = function() {
-    $('#landingPage').hide();
-    $('#mainMenu').hide();
-    $('#resume').hide();
-    $('#programs').hide();
-    $('#currentProgect').hide();
-    $('#faq').hide();
-    $('updates').hide();
-    $('feedback').hide();
+    // $('#landingPage').hide();
+    // $('#mainMenu').hide();
+    // $('#resume').hide();
+    // $('#programs').hide();
+    // $('#currentProgect').hide();
+    // $('#faq').hide();
+    // $('updates').hide();
+    // $('feedback').hide();
+    console.log(1);
 
     $('#resume').show();
   }

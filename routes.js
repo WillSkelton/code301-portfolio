@@ -1,7 +1,9 @@
 'use strict';
 
-page('/', () => {console.log(1);});
-page('/resume', ProjectView.showResume);
+page('/',);
+page('/resume', function() {
+  console.log(1);
+});
 page('/programs', ProjectView.showProjects);
 page();
 
