@@ -24,7 +24,7 @@
 	Project.fetchAll = function() {
     if (localStorage.projectData) {
       Project.loadAll(JSON.parse(localStorage.projectData));
-			ProjectView.displayProjects();
+			View.displayProjects();
 
     } else {
 
@@ -33,8 +33,7 @@
 				console.log(localStorage.projectData);
 
 				Project.loadAll(data);
-				ProjectView.displayProjects();
-
+				View.displayProjects();
 			});
     }
   };
