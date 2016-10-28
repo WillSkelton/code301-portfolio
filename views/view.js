@@ -32,8 +32,8 @@
 
   View.displayProjects = function(){
 
-    Project.toHTML();
-
+    const source = $(`#programTemplate`).html();
+		const template = Handlebars.compile(source);
     // EMPTIES PROGRAM LIST
     $('#programs').empty();
 
@@ -51,14 +51,26 @@
 
 
     // ========= SHOW PROGRAMS PAGE =========
+    $('#mainMenu').hide();
+    $('#resume').hide();
     $('#programs').show();
+
   }
 
   View.showResume = function() {
 
-    console.log(1);
-
+    $('#mainMenu').hide();
+    $('#programs').hide();
     $('#resume').show();
+  }
+
+  View.showMainMenu = function() {
+
+    $('#programs').hide();
+    $('#resume').hide();
+    $('#filterSelect').hide();
+
+    $('#mainMenu').show();
   }
 
   ctx.View = View;
