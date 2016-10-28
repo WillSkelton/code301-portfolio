@@ -1,3 +1,28 @@
+html{
+  background-color: rgba(20, 20, 20, 1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  width: 100%;
+  height: 100%;
+
+}
+body{
+  width: 90%;
+  height: 100%;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+section{
+  width: 75%;
+}
+
 #resume{
   display: none;
 }
