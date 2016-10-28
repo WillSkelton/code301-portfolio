@@ -1,0 +1,32 @@
+#nav{
+  background-color: rgba(15, 70, 160, .6);
+  border: 3px solid rgba(145, 120, 115, 1);
+}
+.socialLink{
+  font-size: 1.5em;
+  color: black;
+}
+.socialLink:hover{
+  color: rgba(40, 135, 95, 1);
+}
+.context{
+  font-size: 1.5em;
+  color: black;
+}
+.context:hover{
+  color: rgba(40, 135, 95, 1);
+}
+
+
+#title{
+  background-color: rgba(120, 120, 120, .7);
+  border: 3px solid rgba(15, 70, 160, 1)
+}
+#bio{
+  background-color: rgba(120, 120, 120, .7);
+  border: 3px solid rgba(15, 70, 160, 1)
+}
+#cv{
+  background-color: rgba(120, 120, 120, .7);
+  border: 3px solid rgba(15, 70, 160, 1)
+}
