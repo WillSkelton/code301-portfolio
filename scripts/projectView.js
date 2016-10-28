@@ -58,7 +58,7 @@
   }
 
   ProjectView.navScript = function() {
-    $('#socialButtons').slideToggle(400);
+    $('#socialButtons').toggle(400);
     $('#contextButtons').toggle(400);
   }
 
@@ -103,24 +103,24 @@
     $('updates').hide();
     $('feedback').hide();
 
-
-    // LANDING PAGE
-    $('#landingPage').show();
-    $('#enterIcon').on('click', ProjectView.landingScript);
-    $('#home').on('click', ProjectView.landingScript);
+    //
+    // // LANDING PAGE
+    // $('#landingPage').show();
+    // $('#enterIcon').on('click', ProjectView.landingScript);
+    // $('#home').on('click', ProjectView.landingScript);
 
     // NAV
     $('#socialButtons').hide();
     $('#contextButtons').hide();
-    $('#nav-toggle').on('click', ProjectView.navScript);
+    // $('#nav-toggle').on('click', ProjectView.navScript);
 
     // RESUME
-    $('#resume-button').on('click', ProjectView.showResume);
-    $('#res').on('click', ProjectView.showResume);
+    // $('#resume-button').on('click', ProjectView.showResume);
+    // $('#res').on('click', ProjectView.showResume);
 
     // PROJECTS
-    $('#programs-button').on('click', ProjectView.showProjects);
-    $('#prog').on('click', ProjectView.showProjects);
+    // $('#programs-button').on('click', ProjectView.showProjects);
+    // $('#prog').on('click', ProjectView.showProjects);
   }
 
   ProjectView.doAllTheThings = function (){
