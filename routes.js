@@ -1,9 +1,8 @@
 'use strict';
 
-page('/',);
-page('/mainMenu', ProjectView.landingScript);
-page('/mainMenu/resume', ProjectView.showResume);
-page('/mainMenu/programs', ProjectView.showProjects);
+page('/', () => {console.log(1);});
+page('/resume', ProjectView.showResume);
+page('/programs', ProjectView.showProjects);
 page();
 
 // page('mainMenu/currentProgect', currentProgect.load());
