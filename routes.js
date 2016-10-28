@@ -1,6 +1,6 @@
 'use strict';
 
-page('/',);
+page('/', mainMenuController.init);
 page('/resume',  resumeController.init);
 page('/programs', projectController.init);
 page();
