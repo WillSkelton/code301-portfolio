@@ -18,6 +18,13 @@ li{
 a{
   text-decoration: none;
 }
+a:hover{
+  text-decoration: none;
+}
+a:visited{
+  color: currentColor;
+  
+}
 
 section{
   width: 75%;
