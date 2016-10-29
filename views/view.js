@@ -10,6 +10,8 @@
 
   View.populateFilters = function() {
     const selector = $('#filterSelect');
+    selector.empty();
+    selector.append(`<option class='select' value="option">Filter By Name</option>`);
     let uniqueAuthors = [];
 
     Project.allProjects.forEach((currentProject, i) => {
