@@ -1,6 +1,6 @@
 #nav{
   background-color: rgba(15, 70, 160, .6);
-  border: 3px solid rgba(145, 120, 115, 1);
+  border: 3px solid rgba(120, 80, 55, 1);
 }
 .socialLink{
   font-size: 1.5em;
@@ -17,16 +17,54 @@
   color: rgba(40, 135, 95, 1);
 }
 
+#mainMenu{
+  background-color: rgba(120, 120, 120, .75);
+  border: 3px solid rgba(15, 70, 160, 1)
+}
+#mainMenu a:hover{
+  color: rgba(40, 135, 95, 1);
+  background-color: black;
+}
 
+#resume a{
+  color: black;
+  border: 1px solid rgba(40, 135, 95, 1);
+}
+#resume a:hover{
+  color: rgba(40, 135, 95, 1);
+  background-color: black;
+}
+#resume li{
+  list-style: circle;
+}
 #title{
-  background-color: rgba(120, 120, 120, .7);
+  background-color: rgba(120, 120, 120, .75);
   border: 3px solid rgba(15, 70, 160, 1)
 }
 #bio{
-  background-color: rgba(120, 120, 120, .7);
+  background-color: rgba(120, 120, 120, .75);
   border: 3px solid rgba(15, 70, 160, 1)
 }
 #cv{
-  background-color: rgba(120, 120, 120, .7);
+  background-color: rgba(120, 120, 120, .75);
   border: 3px solid rgba(15, 70, 160, 1)
 }
+
+.programInstance{
+  background-color: rgba(120, 120, 120, .75);
+  border: 3px solid rgba(15, 70, 160, 1)
+}
+.programInstance a:hover{
+  color: rgba(40, 135, 95, 1);
+  background-color: black;
+}
+
+
+
+/*
+rgba(15, 70, 160, 1)
+rgba(120, 80, 55, 1)
+rgba(145, 0, 170, 1)
+rgba(120, 120, 120, 1)
+rgba(40, 135, 95, 1)
+*/

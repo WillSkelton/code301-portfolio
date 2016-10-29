@@ -9,11 +9,13 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5px;
 }
 #mainMenu{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 20%;
 }
 #socialButtons{
   display: flex;
@@ -30,8 +32,31 @@ body{
   flex-direction: column;
   align-items: center;
 }
+
+#title{
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 10px;
+}
+#bio{
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 10px;
+}
+#cv{
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 10px;
+}
+
 #programs{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.programInstance{
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: .7em;
 }
