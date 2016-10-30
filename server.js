@@ -3,7 +3,7 @@ var requestProxy = require('express-request-proxy'),
   port = process.env.PORT || 3000,
   app = express();
 
-app.get('/github/*', frequestProxy({
+app.get('/github/*', requestProxy({
   url: 'https://api.github.com/' + request.params[0],
   headers: { Authorization: 'token ' + process.env.GITHUB_TOKEN }
 }));
