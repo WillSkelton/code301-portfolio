@@ -12,13 +12,13 @@
 
 		<script id="programTemplate" type="text/x-handlebars-template">
 			<section class="programInstance">
-				<h1 class="projectName">{{ title }}</h1>
-
-				<h3 class="linkToRepo"> {{{ repoURL }}}</h3>
-
-				<p class="projectSummary"> {{ summary }}</p>
-
-				<h3 class="projectAuthors"> {{ authorURLs }}</h3>
+				<li>
+	        <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+	        <p>Description: {{description}}</p>
+	        <p>Language: {{language}}</p>
+	        <p>Created: {{created-at}}</p>
+	        <p>Last updated: {{updated_at}}</p>
+	      </li>
 			</section>
 		</script>
 
@@ -135,7 +135,9 @@
 
 <!-- ========= PROGRAMS ========= -->
 		<section id="programs">
+			<ul id="programList">
 
+			</ul>
 		</section>
 
 <!-- ========= CURRENT PROJECT ========= -->
@@ -151,12 +153,20 @@
 
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<script type="text/javascript" src='githubToken.js'></script>
+
+	<script type="text/javascript" src="/scripts/repo.js"></script>
+	<script type="text/javascript" src="/views/repoView.js"></script>
+	<script type="text/javascript" src='controllers/projectController.js'></script>
 	<script type="text/javascript" src='models/projects.js'></script>
 	<script type="text/javascript" src='views/view.js'></script>
 	<script type="text/javascript" src='controllers/mainMenuController.js'></script>
 	<script type="text/javascript" src='controllers/resumeController.js'></script>
-	<script type="text/javascript" src='controllers/projectController.js'></script>
+
 	<script type="text/javascript" src='routes.js'></script>
+
+
 
 
 </html>

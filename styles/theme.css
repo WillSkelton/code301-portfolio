@@ -59,7 +59,9 @@
   background-color: black;
 }
 
-
+#programList li{
+  color: white;
+}
 
 /*
 rgba(15, 70, 160, 1)
