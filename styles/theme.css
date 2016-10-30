@@ -54,10 +54,16 @@
   background-color: rgba(120, 120, 120, .75);
   border: 3px solid rgba(15, 70, 160, 1)
 }
-.programInstance a:hover{
+.programInstance h3{
+  color: black;
+  border: 1px solid rgba(40, 135, 95, 1);
+  width: 140px;
+}
+.programInstance h3:hover{
   color: rgba(40, 135, 95, 1);
   background-color: black;
 }
+
 
 #programList li{
   color: white;
