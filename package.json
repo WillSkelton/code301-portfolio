@@ -1,0 +1,23 @@
+{
+  "name": "code301-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio made during Codefellows\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[ Fellows\u001b[2~ 301n5 Class",
+  "main": "data-object.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/William-F-Skelton/code301-portfolio.git"
+  },
+  "author": "william skelton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/William-F-Skelton/code301-portfolio/issues"
+  },
+  "homepage": "https://github.com/William-F-Skelton/code301-portfolio#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
