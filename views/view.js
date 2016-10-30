@@ -7,14 +7,12 @@
     selector.empty();
     selector.append(`<option class='select' value="option">Filter By Name</option>`);
 
-    console.log(repos);
     let repoNames = [];
 
     repos.forEach((currenRepo, i) => {
       repoNames[i] = repos[i].name;
     })
 
-    console.log(repoNames);
     // // APPENDS EACH AUTHOR TO FILTER IN THE DOM
     repoNames.forEach((currentRepo, k) => {
       $('#filterSelect').append(`<option id='filterOption' val=${currentRepo.toLowerCase().replace(/ /g, "")}> ${currentRepo}</option>`);
@@ -23,14 +21,9 @@
     $('#filterSelect').show();
   }
 
-
   View.showProjects = function() {
 
     repos.requestRepos(repoView.index);
-
-
-    // View.populateFilters(repos);
-
 
     // ========= SHOW PROGRAMS PAGE =========
     $('#mainMenu').hide();
