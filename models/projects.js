@@ -10,28 +10,7 @@
 
 	Project.allProjects = [];
 
-	Project.loadAll = function(projectData) {
-		Project.allProjects = projectData.map(function(element) {
-			return new Project(element);
-		});
-	};
 
-	Project.fetchAll = function() {
-    if (localStorage.projectData) {
-      Project.loadAll(JSON.parse(localStorage.projectData));
-			View.displayProjects();
-
-    } else {
-
-      $.getJSON('data/projects.json', function(data) {
-				localStorage.projectData = JSON.stringify(data);
-				console.log(localStorage.projectData);
-
-				Project.loadAll(data);
-				View.displayProjects();
-			});
-    }
-  };
 
 	ctx.Project = Project;
 
