@@ -7,15 +7,12 @@
 
   repos.requestRepos = function(callback) {
     $.ajax({
-      url: 'https://api.github.com/user/repos?sort=updated&per_page=10',
+      url: '/user/repos?sort=updated&per_page=10',
       type: 'GET',
-      headers: {
-        Authorization: `token ${githubToken}`
-      }
+
     }).done(data => {
         repos.all = data;
-      // repos.all = data;
-      // console.log(repos.all);
+
       callback();
     });
   };
@@ -25,6 +22,5 @@
     });
   };
 
-  console.log(repos.all);
   module.repos = repos;
 })(window);
