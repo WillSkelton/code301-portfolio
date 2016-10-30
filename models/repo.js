@@ -7,10 +7,11 @@
 
   repos.requestRepos = function(callback) {
     $.ajax({
-      url: '/user/repos?sort=updated&per_page=10',
+      url: 'github/user/repos?sort=updated&per_page=10',
       type: 'GET',
 
     }).done(data => {
+      console.log(data);
         repos.all = data;
 
       callback();
